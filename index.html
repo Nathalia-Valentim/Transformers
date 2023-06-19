@@ -13,7 +13,7 @@
 <body>
     <main>
         <section class="Transformers">
-            <img class="robo" src="./img/pngmelhor.png" alt="Transformers">
+            <img class="robo" src="./img/pngmelhor.png" alt="Transformers" id="bumblebee">
             <figcaption class="titulo">Transformers <br>2023</figcaption>
         </section>
 
@@ -21,28 +21,28 @@
             <div class="estatistica">
                 <p class="estatistica__titulo">Força</p>
                 <div class="estatistica__valor"> 
-                    <p class="estatistica__numero">789</p> 
+                    <p class="estatistica__numero" data-estatisticas="forca">0</p> 
                 </div>
             </div>
 
             <div class="estatistica">
                 <p class="estatistica__titulo">Poder</p>
                 <div class="estatistica__valor"> 
-                    <p class="estatistica__numero">670</p> 
+                    <p class="estatistica__numero" data-estatisticas="poder">0</p> 
                 </div>
             </div>
              
             <div class="estatistica">
                 <p class="estatistica__titulo">Energia</p>
                 <div class="estatistica__valor"> 
-                    <p class="estatistica__numero">489</p> 
+                    <p class="estatistica__numero" data-estatisticas="energia">0</p> 
                 </div>
             </div>
                 
             <div class="estatistica">
                 <p class="estatistica__titulo">Velocidade</p>
                 <div class="estatistica__valor"> 
-                    <p class="estatistica__numero">574</p> 
+                    <p class="estatistica__numero" data-estatisticas="velocidade">0</p> 
                 </div>
             </div>
 
@@ -54,9 +54,9 @@
                     <div class="peca">
                         <label for="" class="peca__titulo">Braços</label>
                         <div class="controle">
-                            <buttom class="controle__ajuste">-</buttom>
-                            <input type="text" class="controle__contador" value="00">
-                            <buttom class="controle__ajuste">+</buttom>
+                            <buttom class="controle__ajuste" data-controle="-" data-peca="bracos">-</buttom>
+                            <input type="text" class="controle__contador" value="00" data-contador>
+                            <buttom class="controle__ajuste" data-controle="+" data-peca="bracos">+</buttom>
                         </div>
                     </div>
 
@@ -64,9 +64,9 @@
                     <div class="peca">
                         <label for="" class="peca__titulo">Blindagem</label>
                         <div class="controle">
-                            <buttom class="controle__ajuste">-</buttom>
-                            <input type="text" class="controle__contador" value="00">
-                            <buttom class="controle__ajuste">+</buttom>
+                            <buttom class="controle__ajuste" data-controle="-" data-peca="blindagem">-</buttom>
+                            <input type="text" class="controle__contador" value="00" data-contador>
+                            <buttom class="controle__ajuste" data-controle="+" data-peca="blindagem">+</buttom>
                         </div>
                     </div>
 
@@ -74,9 +74,9 @@
                     <div class="peca">
                         <label for="" class="peca__titulo">Nucleos</label>
                         <div class="controle">
-                            <buttom class="controle__ajuste">-</buttom>
-                            <input type="text" class="controle__contador" value="00">
-                            <buttom class="controle__ajuste">+</buttom>
+                            <buttom class="controle__ajuste" data-controle="-" data-peca="nucleos">-</buttom>
+                            <input type="text" class="controle__contador" value="00" data-contador>
+                            <buttom class="controle__ajuste" data-controle="+" data-peca="nucleos">+</buttom>
                         </div>
                     </div>
 
@@ -84,9 +84,9 @@
                     <div class="peca">
                         <label for="" class="peca__titulo">Pernas</label>
                         <div class="controle">
-                            <buttom class="controle__ajuste">-</buttom>
-                            <input type="text" class="controle__contador" value="00">
-                            <buttom class="controle__ajuste">+</buttom>
+                            <buttom class="controle__ajuste" data-controle="-" data-peca="pernas">-</buttom>
+                            <input type="text" class="controle__contador" value="00" data-contador>
+                            <buttom class="controle__ajuste" data-controle="+" data-peca="pernas">+</buttom>
                         </div>
                     </div>
 
@@ -94,9 +94,9 @@
                     <div class="peca">
                         <label for="" class="peca__titulo">Foguetes</label>
                         <div class="controle">
-                            <buttom class="controle__ajuste">-</buttom>
-                            <input type="text" class="controle__contador" value="00">
-                            <buttom class="controle__ajuste">+</buttom>
+                            <buttom class="controle__ajuste" data-controle="-" data-peca="foguetes">-</buttom>
+                            <input type="text" class="controle__contador" value="00" data-contador>
+                            <buttom class="controle__ajuste" data-controle="+" data-peca="foguetes">+</buttom>
                         </div>
                     </div>
 
@@ -107,5 +107,8 @@
 
 
     </main>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
